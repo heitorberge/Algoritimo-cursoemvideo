@@ -1,11 +1,11 @@
 algoritmo "EscolaInteligente"
-// Função :
+// FunÃ§Ã£o :
 // Autor : Heitor berg
 // Data : 18/09/2024
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
    Als, Enq, Aluno:Inteiro
-   None, Nm : Caractere
+   Nome, Nm : Caractere
    Nota, Mn:Real
 inicio
       Enq <- 0
@@ -21,13 +21,13 @@ inicio
                Enq <- Enq + 1
                Aluno <- Aluno + 1
                Escreva ("NOME DO ALUNO:")
-               Leia (None)
+               Leia (Nome)
                Escreva ("NOTA DO ALUNO:")
                Leia (Nota)
                Escreval ("----------------------")
                Se (Nota > Mn) entao
                   Mn <- Nota
-                  Nm <- None
+                  Nm <- Nome
                FimSe
       FimEnquanto
       Escreval ("O Aluno Com a Melhor Nota Foi ", Nm, " Com ", Mn, " Pontos Na Prova")
